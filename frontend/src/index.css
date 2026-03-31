@@ -1,0 +1,37 @@
+:root {
+  --rose: #c41e3a;
+  --rose-light: #f8e8ea;
+  --bud: #2d5a27;
+  --bud-light: #e8f0e6;
+  --thorn: #4a3728;
+  --thorn-light: #f0ebe6;
+  --bg: #fdfbf9;
+  --card: #fff;
+  --text: #1a1a1a;
+  --text-muted: #5c5c5c;
+  --border: #e5e0d8;
+  --success: #2d5a27;
+  --error: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+}

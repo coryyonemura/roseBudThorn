@@ -1,0 +1,141 @@
+.app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--text);
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.main {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-row label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-row input[type="date"] {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.field .hint {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.field textarea {
+  font: inherit;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 80px;
+  background: var(--bg);
+}
+
+.field textarea:focus {
+  outline: none;
+  border-color: var(--thorn);
+  box-shadow: 0 0 0 2px var(--thorn-light);
+}
+
+.field-rose textarea:focus { border-color: var(--rose); box-shadow: 0 0 0 2px var(--rose-light); }
+.field-bud textarea:focus { border-color: var(--bud); box-shadow: 0 0 0 2px var(--bud-light); }
+.field-thorn textarea:focus { border-color: var(--thorn); box-shadow: 0 0 0 2px var(--thorn-light); }
+
+.char-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.char-count.at-limit {
+  color: var(--error);
+  font-weight: 600;
+}
+
+.status {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.status-success {
+  background: var(--bud-light);
+  color: var(--success);
+}
+
+.status-error {
+  background: #fef2f2;
+  color: var(--error);
+}
+
+.submit-btn {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background: var(--thorn);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

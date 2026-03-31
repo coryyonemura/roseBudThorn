@@ -1,0 +1,53 @@
+This app will give the user a reflection each day as a rose bud thorn. 
+
+Rose - something you are thankful for
+Bud - something you want to improve on for tomorrow
+Thorn - something difficult today
+
+Each entry has a Twitter like format, 280 characters max
+
+you can click on a calendar that shows the reflections for each day 
+
+AI can summarize how you've been doing each week/month and offer encouragement
+
+
+Example
+Rose: Today I am thankful for the beautiful weather. The walk to class was a great
+reminder of the simple things and God's creation
+
+Bud: I want to pray tomorrow for 15 minutes in the morning to center myself on Christ. 
+
+Thorn:
+I really struggled today to focus on doing my homework, which left me stressed
+out and nervous. 
+
+
+Data structure
+
+User {
+    id: int;
+    email: String;
+    username: String;
+    password: String;
+    dateCreated: Date;
+}
+
+Entry{
+    id: int;
+    userId: int;
+    rose: String;
+    bud: String;
+    thorn: String;
+    date: Date;
+}
+
+Summary{
+    entryId: int;
+    userId: int;
+    daysIncludedInSummary: int;
+    summaryText: String;
+    createdAt: Date
+}
+
+
+
